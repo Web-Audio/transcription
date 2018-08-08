@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="VOIS.AI">
+    <title>VOIS.AI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container">
+    <section class="row">
+      <h1>VOIS.AI</h1>
+      <h4>You can start speaking anytime.</h4>
+    </section>
+    <div class="words" contenteditable>
+    </div>
+    <div class="row">
+      <button class="btn btn-lg btn-default" id="analyze_btn" onclick="analyzefx();">ANALYZE</button>
+    </div>
+    <div class="analytics" style="display:none;" id="analytics_div" contenteditable>
+      <h3>Analytics</h3>
+      <div class="counter" id="analytics_count"></div>
+    </div>
+    <!-- <button onclick="analyzeSpeech()">Analyze </button> -->
+    <!-- <div class="chart"></div> -->
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+  <script src="app.js"></script>
+</html>
